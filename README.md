@@ -28,8 +28,6 @@ from folium.plugins import HeatMap, MarkerCluster
 ```
 ### Create a map
 `m_1 = folium.Map(location=[42.32,-71.0589], tiles='openstreetmap', zoom_start=10)`
-
-### Display the map
 ![m_1](m_1.png)
 
 ### Load the data
@@ -64,7 +62,6 @@ daytime_robberies = crimes[((crimes.OFFENSE_CODE_GROUP == 'Robbery') & \
 for idx, row in daytime_robberies.iterrows():
     Marker([row['Lat'], row['Long']]).add_to(m_2)
 ```
-### Display the map
 ![m_2](m_2.png)
 
 ### Create the map
@@ -78,8 +75,6 @@ for idx, row in daytime_robberies.iterrows():
         mc.add_child(Marker([row['Lat'], row['Long']]))
 m_3.add_child(mc)
 ```
-
-### Display the map
 ![m_3](m_3.png)
 
 ### Create a base map
@@ -101,7 +96,6 @@ for i in range(0,len(daytime_robberies)):
         radius=20,
         color=color_producer(daytime_robberies.iloc[i]['HOUR'])).add_to(m_4)
 ```
-### Display the map
 ![m_4](m_4.png)
 
 ### Create a base map
@@ -109,8 +103,6 @@ for i in range(0,len(daytime_robberies)):
 
 ### Add a heatmap to the base map
 `HeatMap(data=crimes[['Lat', 'Long']], radius=10).add_to(m_5)`
-
-### Display the map
 ![m_5](m_5.png)
 
 ### GeoDataFrame with geographical boundaries of Boston police districts
@@ -140,6 +132,5 @@ Choropleth(geo_data=districts.__geo_interface__,
            legend_name='Major criminal incidents (Jan-Aug 2018)'
           ).add_to(m_6)
 ```
-### Display the map
 ![m_6](m_6.png)
 
