@@ -30,7 +30,7 @@ from folium.plugins import HeatMap, MarkerCluster
 `m_1 = folium.Map(location=[42.32,-71.0589], tiles='openstreetmap', zoom_start=10)`
 
 # Display the map
-![m_1](/media/m_1.png)
+![m_1](./media/m_1.png)
 
 # Load the data
 `crimes = pd.read_csv("archive/crimes-in-boston/crimes-in-boston/crime.csv", encoding='latin-1')`
