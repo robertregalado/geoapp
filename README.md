@@ -119,12 +119,14 @@ districts_full = gpd.read_file('archive/Police_Districts/Police_Districts/Police
 districts = districts_full[["DISTRICT", "geometry"]].set_index("DISTRICT")
 districts.head()
 ```
+![districts](districts.png)
 
 # Number of crimes in each police district
 ```py
 plot_dict = crimes.DISTRICT.value_counts()
 plot_dict.head()
 ```
+![plot_dict](plot_dict.png)
 
 # Create a base map
 `m_6 = folium.Map(location=[42.32,-71.0589], tiles='cartodbpositron', zoom_start=12)`
