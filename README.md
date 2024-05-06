@@ -1,6 +1,6 @@
 # Boston Crime Map: Insights and Analysis
 
-This code is an example of using the Folium library in Python to create interactive maps visualizing crime data in Boston. Here's a breakdown of what each part does:
+Boston Crime Map: Insights and Analysis" is a project focused on analyzing and visualizing crime data in Boston. Using geographical data and crime statistics, the project aims to provide insights into crime patterns and trends in the city. Through interactive maps and data visualization techniques, users can explore various aspects of crime incidents, such as types of crimes, locations, and time distributions. The project may uncover patterns that could help law enforcement agencies, policymakers, and residents better understand and address crime-related issues in Boston.
 
 1. **Setting up the Environment**: Import necessary libraries such as Pandas for data manipulation, Geopandas for handling geographical data, and Folium for creating interactive maps.
 
